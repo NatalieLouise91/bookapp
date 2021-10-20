@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Landing from './Landing';
@@ -6,6 +6,7 @@ import Navigation from './Navigation';
 import About from './About';
 import Categories from './Categories';
 import Contacts from './Contacts';
+import Books from './Books';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contacts" exact component={Contacts}/>
         </Switch>
       </BrowserRouter>
+      <Books/>
     </div>
     );
 }
