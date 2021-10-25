@@ -18,6 +18,11 @@ const SearchBar = () => {
             })  
     }
 
+    function handleClear(event){
+        event.preventDefault();
+        setResult([])
+    }
+
     return (
         <form onSubmit={handleSubmit}>  
         <div className="card-header main-search">  
@@ -26,10 +31,12 @@ const SearchBar = () => {
                     <input onChange={handleChange} className="AutoFocus form-control" placeholder="Type something..." type="text" />  
                 </div>  
                 <div className="ml-auto">  
-                    <input type="submit" value="Search" className="btn btn-primary search-btn" />  
+                    <input type="submit" value="Search" className="btn btn-primary search-btn" /> 
                 </div>  
             </div>  
         </div>
+
+        <input onClick={handleClear} type="submit" value="Clear" className="btn btn-primary" />
 
         <div className="container">  
                 <div className="row">  
