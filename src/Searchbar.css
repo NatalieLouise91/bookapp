@@ -1,0 +1,45 @@
+.container{
+    max-width: 100%;
+}
+
+.card-header{
+    background-color:#f9914b    ;
+}
+.searchbar{
+    width: 500px;
+}
+
+.logo{
+    justify-content: center;
+}
+
+.btn{
+    background-color: #4bb3f9;
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color:  #0094F7    ;
+}
+
+.single-card{
+    padding: 20px;
+}
+.inner-card{
+    transition: 0.3s;
+    margin-top: 10px;
+}
+.inner-card:hover{
+    box-shadow: 5px 10px 8px #00000017;
+
+}
+
+.card-img-top{
+    max-height: 200px;
+}
+.card-desc{
+    display:flex;
+    flex-direction: column;
+    /* align-content: center; */
+}
