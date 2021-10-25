@@ -7,8 +7,9 @@ import About from './About';
 import Categories from './Categories';
 import Contacts from './Contacts';
 // import Books from './Books';
-import Search from './Search';
+// import Preview from './Preview';
 import SearchBar from './SearchBar';
+
 function App() {
   return (
     <div>
@@ -20,7 +21,7 @@ function App() {
           <Route path="/about" exact component={About}/>
           <Route path="/categories" exact component={Categories}/>
           <Route path="/contacts" exact component={Contacts}/>
-          <Route path="/search" exact component={Search}/>
+          {/* <Route path="/preview" exact component={Preview}/> */}
         </Switch>
       </BrowserRouter>
     </div>
