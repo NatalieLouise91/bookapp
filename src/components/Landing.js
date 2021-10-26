@@ -19,7 +19,11 @@ import ImageUnavailable from '../assets/ImageUnavailable.jpg'
 
     return (
         <div>
-            <h2>Recommended Books</h2>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                <h1 class="display-4">Recommended Books</h1>
+                </div>
+            </div>
             <div className="container">  
                     <div className="row">  
                         {result.map(book => (  
