@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "../Searchbar.css";
 import axios from 'axios'; 
+import ImageUnavailable from '../assets/ImageUnavailable.jpg'
+
 
 const SearchBar = () => {  
     const [book, setBook] = useState("");  
@@ -50,13 +52,12 @@ const SearchBar = () => {
                     {result.map(book => (  
                         <div className="col-sm-2 single-card">  
                             <div className="inner-card">  
-                                  <img className="text-center card-img-top" variant="top" src={book.volumeInfo.imageLinks !== undefined ? book.volumeInfo.imageLinks.thumbnail : ''} alt={book.title} />  
+                                  <img className="text-center card-img-top" variant="top" src={book.volumeInfo.imageLinks !== undefined ? book.volumeInfo.imageLinks.thumbnail : ImageUnavailable } alt={book.title} />  
                                 <div className="card-desc">  
                                     <h5 className="card-title">{book.volumeInfo.title}</h5>
                                     <p className="card-title">{book.volumeInfo.authors}</p> 
                                     <p className="card-title">{book.volumeInfo.averageRating}</p>   
                                     <a href= {book.volumeInfo.previewLink} target="_blank" className="preview btn btn-primary" >Preview</a> 
-
                                 </div>  
                             </div>  
                         </div>  
