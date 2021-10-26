@@ -1,9 +1,13 @@
 .container{
     max-width: 100%;
 }
-
+form {
+    background-color: #f9914b;
+}
 .card-header{
-    background-color:#f9914b    ;
+    max-width: 100%;
+    border: 4px solid #f9914b;
+    background-color:#f9914b;
 }
 .searchbar{
     width: 500px;

@@ -28,7 +28,7 @@ const SearchBar = () => {
 
     return (
         <form onSubmit={handleSubmit}>  
-        <div className="card-header main-search container ">  
+        <div className="card-header main-search">  
             <div className="row">
                 <div className="col logo ">
                     <h1>BookMark</h1>
@@ -57,7 +57,7 @@ const SearchBar = () => {
                                     <h5 className="card-title">{book.volumeInfo.title}</h5>
                                     <p className="card-title">{book.volumeInfo.authors}</p> 
                                     <p className="card-title">{book.volumeInfo.averageRating}</p>   
-                                    <a href= {book.volumeInfo.previewLink} target="_blank" className="preview btn btn-primary" >Preview</a> 
+                                    <a href= {book.volumeInfo.previewLink} className="preview btn btn-primary" >Preview</a> 
 
                                 </div>  
                             </div>  
