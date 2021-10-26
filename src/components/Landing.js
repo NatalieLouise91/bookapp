@@ -31,7 +31,7 @@ import ImageUnavailable from '../assets/ImageUnavailable.jpg'
                                         <h5 className="card-title">{book.volumeInfo.title}</h5>
                                         <p className="card-title">{book.volumeInfo.authors}</p> 
                                         <p className="card-title">{book.volumeInfo.averageRating}</p>   
-                                        <a href= {book.volumeInfo.previewLink} target="_blank" className="btn btn-primary" >Preview</a> 
+                                        <a href= {book.volumeInfo.previewLink} className="btn btn-primary" >Preview</a> 
                                     </div>  
                                 </div>  
                             </div>  
