@@ -58,6 +58,7 @@ const SearchBar = () => {
                                     <p className="card-title">{book.volumeInfo.authors}</p> 
                                     <p className="card-title">{book.volumeInfo.averageRating}</p>   
                                     <a href= {book.volumeInfo.previewLink} target="_blank" className="preview btn btn-primary" >Preview</a> 
+
                                 </div>  
                             </div>  
                         </div>  
