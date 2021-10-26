@@ -8,6 +8,15 @@ function Contacts() {
         <p>We are a team of Coders from Coder Academy. This site is our second Hackathon project.</p>
         <p>Here is the Github repo for this project. You can reach us here to raise any issues or modifications.</p>
         <a href="https://github.com/NatalieLouise91/bookapp"><img src={Github} alt="link to github" height="60px"/></a>
+
+        <p>Introducing our Team:</p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/natalie-bottema-6b8164207/">Natalie Bottema</a></li>
+          <li><a href="https://www.linkedin.com/in/walterpham/">Walter Pham</a></li>
+          <li><a href="https://www.linkedin.com/in/yoko-ujihara-9584541a2/">Yoko Ujihara</a></li>
+          <li><a href="https://www.linkedin.com/in/ben-aitcheson-75963b84/">Ben Aitcheson</a></li>
+          <li><a href="https://www.linkedin.com/in/russell-m-85435242/">Russell Moore</a></li>
+        </ul>
     </div>
   );
 }
