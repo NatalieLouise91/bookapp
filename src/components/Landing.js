@@ -33,10 +33,10 @@ import "../Searchbar.css";
                     <div className="row">  
                         {result.map(book => (  
                             <div className="col-sm-2">  
-                                <div style={{ 'marginTop': '10px' }}>  
+                                <div className="shadowb" style={{ 'marginTop': '10px' }}>  
     
-                                    <img variant="top" src={book.volumeInfo.imageLinks !== undefined ? book.volumeInfo.imageLinks.thumbnail : ImageUnavailable} alt={book.title} />  
-                                    <div>  
+                                    <img className="card-img-top" variant="top" src={book.volumeInfo.imageLinks !== undefined ? book.volumeInfo.imageLinks.thumbnail : ImageUnavailable} alt={book.title} />  
+                                    <div className="card-desc">  
                                         <h5 className="card-title">{book.volumeInfo.title}</h5>
                                         <p className="card-title">{book.volumeInfo.authors}</p> 
                                         <p className="card-title">{book.volumeInfo.averageRating}</p>   
