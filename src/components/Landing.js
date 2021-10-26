@@ -1,16 +1,16 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState} from 'react';
 import axios from 'axios'; 
+import ImageUnavailable from '../assets/ImageUnavailable.jpg'
 
     const Landing = () => {  
         const [result, setResult] = useState([]);   
      
         function loadBooks() {   
-            axios.get(`https://www.googleapis.com/books/v1/volumes?q=subject:fantasy&key=&maxResults=4`)  
+            axios.get(`https://www.googleapis.com/books/v1/volumes?q=subject:adventure&key=&maxResults=10`)  
                 .then(data => {   
                     setResult(data.data.items);  
                 })  
         }
-
         loadBooks();
 
     return (
@@ -22,7 +22,7 @@ import axios from 'axios';
                             <div className="col-sm-2">  
                                 <div style={{ 'marginTop': '10px' }}>  
     
-                                    <img variant="top" src={book.volumeInfo.imageLinks !== undefined ? book.volumeInfo.imageLinks.thumbnail : ''} alt={book.title} />  
+                                    <img variant="top" src={book.volumeInfo.imageLinks !== undefined ? book.volumeInfo.imageLinks.thumbnail : ImageUnavailable} alt={book.title} />  
                                     <div>  
                                         <h5 className="card-title">{book.volumeInfo.title}</h5>
                                         <p className="card-title">{book.volumeInfo.authors}</p> 
