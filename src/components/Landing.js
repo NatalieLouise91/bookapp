@@ -4,14 +4,17 @@ import axios from 'axios';
     const Landing = () => {  
         const [result, setResult] = useState([]);   
      
-        function loadBooks() {   
-            axios.get(`https://www.googleapis.com/books/v1/volumes?q=subject:fantasy&key=&maxResults=4`)  
-                .then(data => {   
-                    setResult(data.data.items);  
-                })  
+        function LoadBooks() {   
+            useEffect(() => {
+                axios.get(`https://www.googleapis.com/books/v1/volumes?q=subject:fantasy&key=&maxResults=10`)  
+                    .then(data => {   
+                        setResult(data.data.items);  
+                    },
+                    [])                 
+            })
         }
 
-        loadBooks();
+        LoadBooks();
 
     return (
         <div>
