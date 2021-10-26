@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; 
 import ImageUnavailable from '../assets/ImageUnavailable.jpg'
+import "../Title.css"
+import "../Searchbar.css";
+
 
     const Landing = () => {  
         const [result, setResult] = useState([]);   
@@ -21,7 +24,9 @@ import ImageUnavailable from '../assets/ImageUnavailable.jpg'
         <div>
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                <h1 class="display-4">Recommended Books</h1>
+                <h1 class="display-4 title-page">Recommended Books</h1>
+                <hr class="my-4 bold"/>
+
                 </div>
             </div>
             <div className="container">  
